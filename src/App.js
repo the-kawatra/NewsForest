@@ -1,5 +1,3 @@
-import './App.css';
-
 import React from 'react';
 import Navbar from './components/Navbar';
 import News from './components/News';
@@ -22,7 +20,6 @@ const App = () => {
           <Route exact path="/science" element={<News apiKey={api} key='science' pageSize={page} country={countryName} category='Science'/>}></Route>
           <Route exact path="/sports" element={<News apiKey={api} key='sports' pageSize={page} country={countryName} category='Sports'/>}></Route>
           <Route exact path="/technology" element={<News apiKey={api} key='technology' pageSize={page} country={countryName} category='Technology'/>}></Route>
-          <Route exact path="/general" element={<News apiKey={api} key='general' pageSize={page} country={countryName} category='General'/>}></Route>
         </Routes>
     </Router>
 
